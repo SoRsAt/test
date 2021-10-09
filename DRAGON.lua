@@ -1705,7 +1705,6 @@ if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
 send(msg.chat_id_, msg.id_,' ✯ لا تستطيع استخدام البوت \n ✯  يرجى الاشتراك بالقناه اولا \n ✯  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
-end
 return false
 end
 function start_function(extra, result, success)
@@ -16081,7 +16080,7 @@ Msᴀɢ ~ #msgs
 𝟓 𝟔 𖡻 #username  ࿇🦄
 𝟓 𝟔 𖡻 #msgs  ࿇🦄
 𝟓 𝟔 𖡻 #auto  ࿇🦄
-𝟓 𝟔 𖡻 #stast  ࿇🦄
+𝟓 ?? 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
 ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
