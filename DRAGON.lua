@@ -8009,7 +8009,7 @@ UserName = b.username_
 else
 UserName = 'G8_01'
 end
-local Text = "✯ ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ','')
+local Text = '✯ ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ','')
 local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
