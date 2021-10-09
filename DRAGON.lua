@@ -17555,7 +17555,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'ɢᴀᴍʙᴏʟ',url="t.me/G8_M_L"},{text = 'ǫᴏʀsᴀɴ', url="t.me/S_79_Q"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if Text == '/sofi' then
