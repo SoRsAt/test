@@ -17320,9 +17320,8 @@ keyboard.inline_keyboard = {
 },
 {
 {text = '✯اوامر التعطيل و التفعيل✯', callback_data="/help2"},{text = '✯اوامر القفل و الفتح✯', callback_data="/help1"},
-},
 {
-Return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))
+Return Https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))
 end
 
 if Text == '/help10' then
