@@ -17493,20 +17493,6 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/S_79_Q&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if Text == '/qors-yquio' then
-local Teext =[[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ǫᴏʀsᴀɴ
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
-
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'ǫᴏʀsᴀɴ',url="t.me/S_79_Q"}},
-{text = 'ʙᴀʀ', callback_data="/barqors"}},{{text = 'ʙᴏᴛs', callback_data="/botqors"}},
-
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/S_79_Q&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 
 if Text == '/barqors' then
 local Teext =[[
@@ -17517,7 +17503,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '◉ ᯓ ˹ʙᴀʀ ǫᴏʀsᴀɴ ࿐',url="t.me/TEAMELSHYATIN"}},
-{{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/qors-yquio"}},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -17530,7 +17516,6 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'بــوت الحمـــايــه ✯',url="t.me/E_h_a_b_bot"}},
-{{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/qors-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
