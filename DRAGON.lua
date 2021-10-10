@@ -16898,6 +16898,7 @@ local Chat_id = data.chat_id_
 local Msg_id = data.message_id_
 local msg_idd = Msg_id/2097152/0.5
 local Text = data.payload_.data_
+end
 
 if Text == '/help1' then
 if not Mod(data) then
@@ -18152,6 +18153,5 @@ id_photo = msg.content_.photo_.sizes_[3].photo_.persistent_id_
 end
 if id_photo == Get_Msg_Pin then
 tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'Msg:Pin:Chat'..msg.chat_id_) end,nil)   
-end
 end
 end
