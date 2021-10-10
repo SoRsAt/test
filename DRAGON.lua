@@ -17967,7 +17967,6 @@ end
 end,nil)   
 end
 Elseif (data.ID == "UpdateMessageEdited") Then
-local msg = data
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.message_id_)},function(extra, result, success)
 database:incr(bot_id..'edits'..result.chat_id_..result.sender_user_id_)
 local Text = result.content_.text_
