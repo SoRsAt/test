@@ -1019,6 +1019,7 @@ end
 function SourceDRAGON(msg,data) -- بداية العمل
 if msg then
 local text = msg.content_.text_
+end
 --------------------------------------------------------------------------------------------------------------
 if text == ("الردود المتعدده") and CoSu(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -15744,7 +15745,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
 [[
-ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
+ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺?? . #username 🇪🇬 ꙰
 ᯓ 𝗦𝗧𝗮𝗦𝗧 . #stast 🇪🇬 ꙰
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
@@ -18169,7 +18170,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx',url="t.me/G8_01"}},
 {{text = 'ᴛᴡᴀsᴏʟ',url="t.me/G8_M_Ltwbot"}}, 
-{{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
+{{text = '✯𝙱𝙰??𝙺↵', callback_data="/HHH"}},
 }
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_01&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -21332,4 +21333,3 @@ end
 
 end -- end new msg 
 end -- end callback 
-end
