@@ -18158,10 +18158,3 @@ tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100'
 end
 end
 end
-
-
-end -- end new msg dev.mr sofi 
-end -- end callback dev.mr sofi
-end
-end
-end
