@@ -1670,7 +1670,7 @@ local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'ماتريكس')
 local DRAGON_Msg = { 
    ' ـــــــــــــــــــــــــــــــــــــــــــــــ\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n⸙╢ وظيفتي حماية المجموعات\n ✯╢ لتفعيل البوت عليك اتباع مايلي \n ↺╢ أضِف البوت إلى مجموعتك\n ♲╢ ارفعه ↜ مشرف\n ➥╜ سيتم ترقيتك مالك في البوت\nــــــــــــــــــــــــــــــــــــــــــــــــــــ ',
 } 
-Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
+Namebot = VENOM_Msg[math.random(#VENOM_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14510,7 +14510,7 @@ end
 if text == 'تغير الايدي' and Manager(msg) then 
 local List = {
 [[
-゠𝚄𝚂𝙴𝚁 ?? #username 𖥲 .
+゠𝚄𝚂𝙴𝚁 𖨈 #username 𖥲 .
 ゠ᴍsɢ 𖨈 #msgs 𖥲 .
 ゠𝚂𝚃𝙰 𖨈 #stast 𖥲 .
 ゠𝙸𝙳 𖨈 #id 𖥲 .
@@ -14928,7 +14928,7 @@ local List = {
  △ | 𝑼𝑬𝑺 : #username ‌‌‏⚚
  ▽ | 𝑺𝑻𝑨 : #stast ☥
  ⊠ | 𝑰𝑫 : #id ‌‌‏♕
- ❏ | 𝑴𝑺𝑮 : #msgs ??
+ ❏ | 𝑴𝑺𝑮 : #msgs 𓆊
  ❏ | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
  ❏ | ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
