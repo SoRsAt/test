@@ -16892,7 +16892,7 @@ if data.ID == "UpdateChannel" then
 if data.channel_.status_.ID == "ChatMemberStatusKicked" then 
 database:srem(bot_id..'Chek:Groups','-100'..data.channel_.id_)  
 end
-end
+
 if data.ID == "UpdateNewCallbackQuery" then
 local Chat_id = data.chat_id_
 local Msg_id = data.message_id_
@@ -17966,7 +17966,7 @@ return false
 end
 end,nil)   
 end
-elseif (data.ID == "UpdateMessageEdited") then
+Elseif (data.ID == "UpdateMessageEdited") then
 local msg = data
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.message_id_)},function(extra, result, success)
 database:incr(bot_id..'edits'..result.chat_id_..result.sender_user_id_)
