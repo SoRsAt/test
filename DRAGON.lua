@@ -14140,7 +14140,7 @@ local Users = bot_data:scard(bot_id..'User_Bot')
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '✯ عدد الجروبات  ➠ {'..Groups..'}'..'
+{text = '✯ عدد الجروبات  ➠ {'..Groups..'}'
 },
 {
 {text = '✯  عدد المشتركين  ➠ {'..Users..'}'
