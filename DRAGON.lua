@@ -3986,7 +3986,7 @@ keyboard.inline_keyboard = {
 {{text = '𖤍 اضافه البوت لمجموعتك 𖤍' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_011&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_01/447&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'قرصان' or text == 'شهاب' then
@@ -14769,7 +14769,7 @@ local List = {
 ]],
 [[
        
-࿕ ¦ 𝙐𝙎𝙀𝙍  ⟿ #username ༆
+࿕ ¦ ??𝙎𝙀𝙍  ⟿ #username ༆
 ࿕ ¦ 𝙈𝙎𝙂𝙎   ⟿ #msgs ༆
 ࿕ ¦ 𝙂𝙈??𝙎  ⟿ #stast ༆
 ࿕ ¦ 𝙏𝘿 𝙎𝙏𝘼  ⟿ #id ༆
@@ -15616,7 +15616,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
  🦄 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
- 🦄 | ??𝑻𝑨 : #stast ☥
+ 🦄 | 𝑺𝑻𝑨 : #stast ☥
  🦄 | 𝑰𝑫 : #id ‌‌‏♕
  🦄 | 𝑴𝑺𝑮 : #msgs 𓆊
  🦄 | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 : ⁞
@@ -17031,7 +17031,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '☆𝙱𝙰??𝙺↵', callback_data="/help8"},
+{text = '☆𝙱𝙰𝙲𝙺↵', callback_data="/help8"},
 },
 {
 {text = 'اخفاء الاوامر', callback_data="/hide"},
