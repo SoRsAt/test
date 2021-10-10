@@ -14133,24 +14133,15 @@ return false
 end
 end
 
-if SourceCh(msg) and text == 'الاحصائيات' then
+if text == 'الاحصائيات' then
 if Sudo(msg) then 
-local Groups = bot_data:scard(bot_id..'Chek:Groups')  
-local Users = bot_data:scard(bot_id..'User_Bot')  
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '✯ عدد الجروبات  ➠ {'..Groups..'}'..'
-},
-{
-{text = '✯  عدد المشتركين  ➠ {'..Users..'}'
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+local Groups = bot_data:scard(ban_id..'Chek:Groups')  
+local Users = bot_data:scard(ban_id..'User_Bot')  
+Text = ' ☆ الاحصائيات  \n'..' ☆ عدد الجروبات  ⋙ {'..Groups..'}'..'\n ☆  عدد المشتركين  ⋙ {'..Users..'}'
+send(msg.chat_id_, msg.id_,Text) 
 end
-
+return false
+end
 if text == 'الجروبات' then
 if Sudo(msg) then 
 local Groups = bot_data:scard(ban_id..'Chek:Groups')  
