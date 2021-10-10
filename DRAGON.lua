@@ -875,6 +875,7 @@ end
 function SourceDRAGON(msg,data) -- بداية العمل
 if msg then
 local text = msg.content_.text_
+end
 ------------------------------------------------------------------------
 if msg.chat_id_ then
 local id = tostring(msg.chat_id_)
