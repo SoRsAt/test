@@ -1668,7 +1668,7 @@ if text == "/start" then
 if not Devban(msg) then
 local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'ماتريكس') 
 local DRAGON_Msg = { 
-   ' ـــــــــــــــــــــــــــــــــــــــــــــــ\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n ⸙╢ وظيفتي حماية المجموعات\n ✯╢ لتفعيل البوت عليك اتباع مايلي \n ↺╢ أضِف البوت إلى مجموعتك\n ♲╢ ارفعه ↜ مشرف\n ➥╜ سيتم ترقيتك مالك في البوت\nــــــــــــــــــــــــــــــــــــــــــــــــــــ ',
+   ' ـــــــــــــــــــــــــــــــــــــــــــــــ\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n⸙╢ وظيفتي حماية المجموعات\n ✯╢ لتفعيل البوت عليك اتباع مايلي \n ↺╢ أضِف البوت إلى مجموعتك\n ♲╢ ارفعه ↜ مشرف\n ➥╜ سيتم ترقيتك مالك في البوت\nــــــــــــــــــــــــــــــــــــــــــــــــــــ ',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -1692,24 +1692,6 @@ send(msg.chat_id_, msg.id_,Namebot, 1, 'md')
 end 
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end
-end
-end
-if Chat_Type == 'UserBot' then
-if text == '/start' or text == '❴رجوع❵' then 
-if not Devban(msg) then
-local keyboard = {
-{'✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•✯'},
-{'قرصان','غامبول'},
-{'❴تواصل السورس❵',},
-{'نكت','غنيلي'},
-{'لو خيرك بالصور','تويت بالصور'},
-{'استوري','ثيم'},
-{'الالعاب'},
-{'الغاء'},
-}
-send_inline_key(msg.chat_id_,bl,keyboard)
-end
 end
 end
 end
@@ -14528,7 +14510,7 @@ end
 if text == 'تغير الايدي' and Manager(msg) then 
 local List = {
 [[
-゠𝚄𝚂𝙴𝚁 𖨈 #username 𖥲 .
+゠𝚄𝚂𝙴𝚁 ?? #username 𖥲 .
 ゠ᴍsɢ 𖨈 #msgs 𖥲 .
 ゠𝚂𝚃𝙰 𖨈 #stast 𖥲 .
 ゠𝙸𝙳 𖨈 #id 𖥲 .
@@ -14946,7 +14928,7 @@ local List = {
  △ | 𝑼𝑬𝑺 : #username ‌‌‏⚚
  ▽ | 𝑺𝑻𝑨 : #stast ☥
  ⊠ | 𝑰𝑫 : #id ‌‌‏♕
- ❏ | 𝑴𝑺𝑮 : #msgs 𓆊
+ ❏ | 𝑴𝑺𝑮 : #msgs ??
  ❏ | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
  ❏ | ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
