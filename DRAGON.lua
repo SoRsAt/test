@@ -3660,7 +3660,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/IDK-Zizo/IDK/main/DRAGON.lua')
+os.execute('wget https://github.com/Gambol00/Gambol00/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ☆ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -15623,7 +15623,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
  △ | 𝑼𝑬𝑺 : #username ‌‌‏⚚
- ▽ | 𝑺𝑻?? : #stast ☥
+ ▽ | ??𝑻?? : #stast ☥
  ⊠ | 𝑰𝑫 : #id ‌‌‏♕
  ❏ | 𝑴𝑺𝑮 : #msgs 𓆊
  ❏ | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
