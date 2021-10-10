@@ -3886,7 +3886,6 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
 {text = '600', callback_data="/verp"},{text = '700', callback_data="/plling"},
 },
 {
@@ -15623,7 +15622,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
  △ | 𝑼𝑬𝑺 : #username ‌‌‏⚚
- ▽ | ??𝑻?? : #stast ☥
+ ▽ | 𝑺???? : #stast ☥
  ⊠ | 𝑰𝑫 : #id ‌‌‏♕
  ❏ | 𝑴𝑺𝑮 : #msgs 𓆊
  ❏ | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
