@@ -17645,9 +17645,6 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 end
-if data.ID == "UpdateNewMessage" then  -- new msg
-msg = data.message_
-text = msg.content_.text_
 ------------------------------------------------------------------------
 if text and not database:sismember(bot_id..'Spam:Texting'..msg.sender_user_id_,text) then
 database:del(bot_id..'Spam:Texting'..msg.sender_user_id_) 
