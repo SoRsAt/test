@@ -1019,7 +1019,6 @@ end
 function SourceDRAGON(msg,data) -- بداية العمل
 if msg then
 local text = msg.content_.text_
-end
 --------------------------------------------------------------------------------------------------------------
 if text == ("الردود المتعدده") and CoSu(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -14134,15 +14133,24 @@ return false
 end
 end
 
-if text == 'الاحصائيات' then
+if SourceCh(msg) and text == 'الاحصائيات' then
 if Sudo(msg) then 
-local Groups = bot_data:scard(ban_id..'Chek:Groups')  
-local Users = bot_data:scard(ban_id..'User_Bot')  
-Text = ' ☆ الاحصائيات  \n'..' ☆ عدد الجروبات  ⋙ {'..Groups..'}'..'\n ☆  عدد المشتركين  ⋙ {'..Users..'}'
-send(msg.chat_id_, msg.id_,Text) 
+local Groups = bot_data:scard(bot_id..'Chek:Groups')  
+local Users = bot_data:scard(bot_id..'User_Bot')  
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '✯ عدد الجروبات  ➠ {'..Groups..'}'..'
+},
+{
+{text = '✯  عدد المشتركين  ➠ {'..Users..'}'
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-return false
-end
+
 if text == 'الجروبات' then
 if Sudo(msg) then 
 local Groups = bot_data:scard(ban_id..'Chek:Groups')  
@@ -14865,7 +14873,7 @@ local List = {
 ]],
 [[
 |USERNAME #username 𓃚
-| YOUR -ID - #id ??
+| YOUR -ID - #id 𓃚
 | STAS-#stast 𓃚
 | MSAG - #msgs 𓃚
 | ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
@@ -15726,7 +15734,7 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
 .𖣂 𝙨𝙩𝙖𝙨𝙩 , #stast  🖤 ↴
 .𖣂 𝙡𝘿 , #id  🖤 ↴
-.𖣂 𝘼𝙪𝙩?? , #auto  ?? ↴
+.𖣂 𝘼𝙪𝙩?? , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
 .𖣂 ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
@@ -15745,7 +15753,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
 [[
-ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺?? . #username 🇪🇬 ꙰
+ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
 ᯓ 𝗦𝗧𝗮𝗦𝗧 . #stast 🇪🇬 ꙰
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
@@ -18170,7 +18178,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx',url="t.me/G8_01"}},
 {{text = 'ᴛᴡᴀsᴏʟ',url="t.me/G8_M_Ltwbot"}}, 
-{{text = '✯𝙱𝙰??𝙺↵', callback_data="/HHH"}},
+{{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_01&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -21331,6 +21339,21 @@ end
 end
 
 
-end -- end new msg
-end -- end callback
-end
+end -- end new msg dev.mr ban 
+end -- end callback dev.mr ban
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
