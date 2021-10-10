@@ -14139,8 +14139,8 @@ local Groups = bot_data:scard(bot_id..'Chek:Groups')
 local Users = bot_data:scard(bot_id..'User_Bot')  
 keyboard = {} 
 keyboard.inline_keyboard = {
-{text = '✯ عدد الجروبات  ➠ { '..Groups..' }}'
-{text = '✯  عدد المشتركين  ➠ { '..Users..' }}'
+{text = '✯ عدد الجروبات  ➠  '..Groups..' }'
+{text = '✯  عدد المشتركين  ➠  '..Users..' }'
 {
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
@@ -14868,7 +14868,7 @@ local List = {
 ]],
 [[
 |USERNAME #username 𓃚
-| YOUR -ID - #id 𓃚
+| YOUR -ID - #id ??
 | STAS-#stast 𓃚
 | MSAG - #msgs 𓃚
 | ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
@@ -15729,7 +15729,7 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
 .𖣂 𝙨𝙩𝙖𝙨𝙩 , #stast  🖤 ↴
 .𖣂 𝙡𝘿 , #id  🖤 ↴
-.𖣂 𝘼𝙪𝙩?? , #auto  🖤 ↴
+.𖣂 𝘼𝙪𝙩?? , #auto  ?? ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
 .𖣂 ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
