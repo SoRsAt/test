@@ -14139,8 +14139,8 @@ local Groups = bot_data:scard(bot_id..'Chek:Groups')
 local Users = bot_data:scard(bot_id..'User_Bot')  
 keyboard = {} 
 keyboard.inline_keyboard = {
-{text = '✯ عدد الجروبات  ➠ { '..Groups..' }'
-{text = '✯  عدد المشتركين  ➠ { '..Users..' }'
+{text = '✯ عدد الجروبات  ➠ { '..Groups..' }}'
+{text = '✯  عدد المشتركين  ➠ { '..Users..' }}'
 {
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
