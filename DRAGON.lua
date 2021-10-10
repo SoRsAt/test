@@ -3989,17 +3989,16 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_01/447&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'قرصان' or text == 'شهاب' then
-local id = '1695549459'
-local urrl = https.request('https://api.telegram.org/bot'..tokenget..'/getchat?chat_id='..id)
-local json = JSON.decode(urrl)
-local name = json.result.first_name
-local user = json.result.username
-local bio = json.result.bio
+if text == 'شهاب' or text == 'قرصان' or text == 'قرصان' then
+local Text = [[
+المـطـور قــرصـان ✯
+]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = name,url="t.me/"..user}},}
+keyboard.inline_keyboard = {
+{{text = 'ǫᴏʀsᴀɴ',url="t.me/S_79_Q"}},
+}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..user..'&caption=' .. URL.escape(bio).."&reply_to_message_id="..msg_id.."&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/S_79_Q&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'غامبول' or text == 'غنبول' or text == 'مطور السورس' then
 local Text = [[
@@ -14769,7 +14768,7 @@ local List = {
 ]],
 [[
        
-࿕ ¦ ??𝙎𝙀𝙍  ⟿ #username ༆
+࿕ ¦ 𝙐𝙎𝙀𝙍  ⟿ #username ༆
 ࿕ ¦ 𝙈𝙎𝙂𝙎   ⟿ #msgs ༆
 ࿕ ¦ 𝙂𝙈??𝙎  ⟿ #stast ༆
 ࿕ ¦ 𝙏𝘿 𝙎𝙏𝘼  ⟿ #id ༆
@@ -14777,7 +14776,7 @@ local List = {
  ࿕ ¦ ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
 [[
-► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
+► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠?? #username 𓃚  ꙰
 ► 𝗜𝗗 #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔𝗚 #msgs 𓃚 ꙰
