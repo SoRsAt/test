@@ -16887,7 +16887,6 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/help8"},
 {text = 'اخفاء الاوامر', callback_data="/hide"},
 {
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if Text == '/help6' then
 if not Mod(data) then
@@ -16921,7 +16920,7 @@ keyboard.inline_keyboard = {
 {text = 'اخفاء الاوامر', callback_data="/hide"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+{
 end
 if Text == '/help7' then
 if not Mod(data) then
