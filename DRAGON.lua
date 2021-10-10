@@ -18279,7 +18279,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⌯ ˹sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx˼',url="t.me/G8_01"},{text = 'ᴜsᴇʀ's ғᴏʀ ɢᴀᴍʙᴏʟ',url="t.me/G8_M_L0"}},
+{{text = '⌯ ˹sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx˼',url="t.me/G8_01"}},{{text = 'ᴜsᴇʀ's ғᴏʀ ɢᴀᴍʙᴏʟ',url="t.me/G8_M_L0"}},
 {{text = '☆𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
