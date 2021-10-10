@@ -17967,8 +17967,7 @@ if Text == '/change-hklp' then
 local Teext =[[
 ✯اسعار التنصيب ع سورس ماتريكس✯
 ⌯تواصل مع حد المطورين للتفاصيل⌯
- ✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•✯
-
+✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•✯
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
