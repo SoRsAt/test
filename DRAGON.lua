@@ -17629,7 +17629,6 @@ local Teext =[[
 ✯ مرحباً بك في الالعاب المضافه حديثا ..↑↓
 ✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•✯
 ]]
-]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'تويت', callback_data="/help12"},{text = 'تويت بالصور', callback_data="/help56"}},   
