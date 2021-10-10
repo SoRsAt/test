@@ -1019,6 +1019,7 @@ end
 function SourceDRAGON(msg,data) -- بداية العمل
 if msg then
 local text = msg.content_.text_
+end
 --------------------------------------------------------------------------------------------------------------
 if text == ("الردود المتعدده") and CoSu(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -21330,3 +21331,4 @@ end
 
 end -- end new msg
 end -- end callback
+end
