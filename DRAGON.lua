@@ -7219,35 +7219,6 @@ end
 end
 send(msg.chat_id_, msg.id_,t)
 end
-if text == "متجر الملفات" or text == 'المتجر' then
-if Devban(msg) then
-local Get_Files, res = https://github.com/Gambol00/Gambol00/main/getfile.json")
-if res == 200 then
-local Get_info, res = pcall(JSON.decode,Get_Files);
-vardump(res.plugins_)
-if Get_info then
-local TextS = "\n ✯ اهلا بك في متجر ملفات ماتريكس\n ✯ ملفات السورس ↓\n✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•\n"
-local TextE = "\n✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•✯\n ✯ علامة تعني { ✔️ } ملف مفعل\n ✯ علامة تعني { ✖ } ملف معطل\n ✯ قناة سورس ماتريكس↓\n".." ✯ [اضغط هنا لدخول](t.me/G8_01) \n"
-local NumFile = 0
-for name,Info in pairs(res.plugins_) do
-local Check_File_is_Found = io.open("File_Bot/"..name,"r")
-if Check_File_is_Found then
-io.close(Check_File_is_Found)
-CeckFile = "(✔️)"
-else
-CeckFile = "(✖)"
-end
-NumFile = NumFile + 1
-TextS = TextS..'*'..NumFile.."→* {`"..name..'`}  ➠ '..CeckFile..'\n[-Information]('..Info..')\n'
-end
-send(msg.chat_id_, msg.id_,TextS..TextE) 
-end
-else
-send(msg.chat_id_, msg.id_," ✯ لا يوجد اتصال من ال api \n") 
-end
-return false
-end
-end
 
 if text and text:match("^(تعطيل) (.*)(.lua)$") and Devban(msg) then
 local name_t = {string.match(text, "^(تعطيل) (.*)(.lua)$")}
@@ -14958,7 +14929,7 @@ local List = {
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 : #username
-⚕𝙈𝙀𝙎𝙎𝘼𝙂𝙀𝙎 : #msgs
+⚕𝙈𝙀??𝙎𝘼𝙂𝙀𝙎 : #msgs
 ⚕𝙎𝙏𝘼𝙏𝙎 : #stast
 ⚕𝙄𝘿 : #id
 ⚕𝙅𝙀𝙒𝙀𝙇𝙎 : #game
