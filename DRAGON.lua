@@ -14134,11 +14134,13 @@ return false
 end
 end
 
-if text == 'الاحصائيات' and msa3d(msg) then 
+if text == 'الاحصائيات' then
+if Sudo(msg) then 
 local Groups = bot_data:scard(ban_id..'Chek:Groups')  
 local Users = bot_data:scard(ban_id..'User_Bot')  
 Text = ' ☆ الاحصائيات  \n'..' ☆ عدد الجروبات  ⋙ {'..Groups..'}'..'\n ☆  عدد المشتركين  ⋙ {'..Users..'}'
 send(msg.chat_id_, msg.id_,Text) 
+end
 return false
 end
 if text == 'الجروبات' then
@@ -15743,7 +15745,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
 [[
-ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
+ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺?? . #username 🇪🇬 ꙰
 ᯓ 𝗦𝗧𝗮𝗦𝗧 . #stast 🇪🇬 ꙰
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
@@ -18168,7 +18170,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx',url="t.me/G8_01"}},
 {{text = 'ᴛᴡᴀsᴏʟ',url="t.me/G8_M_Ltwbot"}}, 
-{{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
+{{text = '✯𝙱𝙰??𝙺↵', callback_data="/HHH"}},
 }
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_01&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
