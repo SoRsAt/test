@@ -1642,7 +1642,7 @@ bot_data:del(ban_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id
 return false
 end
 
-------ʙʏ-ɢᴀᴍʙᴏʟ--
+------ʙʏ-ɢᴀᴍʙᴏʟ-----
 if Chat_Type == 'UserBot' then
 if text == '/start' or text == '❴رجوع❵' then 
 if Devban(msg) then
@@ -1650,14 +1650,14 @@ if not msa3d(msg) then
 local bl = '✯انت الان المطور الثانوي في البوت \n✯ سورس ماتريكس\n ✯يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/G8_01)'
 local keyboard = {
 {'✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•✯'},
+{'ضع اسم للبوت','معلومات الكيبورد'},
 {'المطور','الاحصائيات'},
-{'معلومات الكيبورد'},
-{'❴تواصل السورس❵','❴اوامر اضف❵'},
+{'❴تواصل السورس❵'},
+{'❴اوامر الاذاعه❵','❴اوامر اضف❵'},
 {'❴اوامر التفعيل❵','❴اوامر الحمايه❵'},
 {'جلب المشتركين','جلب النسخه'},
 {'جلب المطورين'},
 {'تحديث السورس ','الاصدار'},
-{'الغاء'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 end
@@ -1669,7 +1669,7 @@ if not msa3d(msg) then
 if not Devban(msg) then
 local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'ماتريكس') 
 local DRAGON_Msg = { 
-   ' ـــــــــــــــــــــــــــــــــــــــــــــــ\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n ⸙╢ وظيفتي حماية المجموعات\n ✯╢ لتفعيل البوت عليك اتباع مايلي \n ↺╢ أضِف البوت إلى مجموعتك\n ♲╢ ارفعه ↜ مشرف\n ➥╜ سيتم ترقيتك مالك في البوت\nــــــــــــــــــــــــــــــــــــــــــــــــــــ ',
+' ـــــــــــــــــــــــــــــــــــــــــــــــ\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n♕╢ وظيفتي حماية المجموعات\n✓╢ لتفعيل البوت عليك اتباع مايلي \n♲╢ أضِف البوت إلى مجموعتك\n☣╢ ارفعهُ » مشرف\n♡╜ سيتم ترقيتك مالك في البوت\nــــــــــــــــــــــــــــــــــــــــــــــــــــ ',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -1696,6 +1696,8 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, l
 end
 end
 end
+--------------------------------------------------------------------------------------------------------------
+
 if Chat_Type == 'UserBot' then
 if text == '/start' or text == '❴رجوع❵' then 
 if not msa3d(msg) then
@@ -1711,8 +1713,6 @@ local keyboard = {
 {'الغاء'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
-end
-end
 end
 end
 --------------------------------------------------------------------------------------------------------------
@@ -1945,7 +1945,7 @@ if text == '❴تواصل السورس❵' and Devban(msg) then
 local Text = 'قسم مطورين السورس للدخول الي حسابتهم'
 local Key = {
 {'↜━━❴قـناه المطورين❵━━↝'},
-{'قناة السورس','التواصل'},
+{'قناه السورس','التواصل'},
 {'❴رجوع❵'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
@@ -2049,7 +2049,7 @@ keyboard.inline_keyboard = {
 {{text = '⦅ مــطوريــن الســورس ⦆', url="t.me/G8_01"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/vagwg/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/gam_bol/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
@@ -3932,15 +3932,15 @@ keyboard.inline_keyboard = {
 {{text="رساله للمطور الاساسي",callback_data="YYYBD_aza3h3"..msg.sender_user_id_}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_01&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/gam_bol/6&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 ----------------------------------------------------------------- انتهئ الاوامر الجديدة
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'ماتريكس' then
 local Text = [[
-╭━━━━━❲☆[sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳━━━━━╮
+╭━❲☆[sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳━╮
 [ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ʙᴇsᴛ sᴏᴜʀᴄᴇ](t.me/G8_01)
 [sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx ʙᴇsᴛ ᴏғ ᴛʜᴇ ʙᴇsᴛ](t.me/G8_01)
-╰━━━━━❲☆[sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳━━━━━╯
+╰━❲☆[sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳━╯
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -3966,7 +3966,33 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_M_L&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+if text == 'سيمو' or text == 'مرات غامبول' or text == 'بيني' then
+local Text = [[
+ᴍᴇʀᴀᴛ ɢᴀᴍʙᴏʟ  ♡
+ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'ᴍᴇʀᴀᴛ ɢᴀᴍʙᴏʟ',url="t.me/SEMO87811"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SEMO87811&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 
+
+if text == 'شهاب' or text == 'قرصان' then
+local Text = [[
+ᴘʀᴏɢʀᴀᴍᴍᴇʀ ǫᴏʀsᴀɴ 
+ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'ǫᴏʀsᴀɴ',url="t.me/S_79_Q"}},
+{{text = 'ʙᴀʀ', callback_data="/barqors"}},{{text = 'ʙᴏᴛs', callback_data="/botqors"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/S_79_Q&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 
 
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
@@ -4267,7 +4293,7 @@ end
 
 if text == "توكن البوت" and Developers(msg) then 
 if not SudoBot(msg) then
-send(msg.chat_id_, msg.id_,'هذا الامر خاص بي هيفو فقط')
+send(msg.chat_id_, msg.id_,'هذا الامر خاص بمطـور البـوت فقط')
 return false
 end
 local msg_id = msg.id_/2097152/0.5 
@@ -5087,7 +5113,7 @@ end
 end 
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil) 
 end
-if text == 'قناة السورس' then
+if text == 'قناه السورس' then
 local Text = [[ 
 [قناه سورس ماتريكس ادخل وتابع الجديد](t.me/G8_01)
 ]] 
@@ -5097,7 +5123,7 @@ keyboard.inline_keyboard = {
 {{text = '˹ᴛᴀᴡᴏsʟ˼', url="t.me/G8_M_Ltwbot"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/41&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_01&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•✯' then
 local Text = [[ 
@@ -14107,15 +14133,24 @@ return false
 end
 end
 
-if text == 'الاحصائيات' then
+if SourceCh(msg) and text == 'الاحصائيات' then
 if Sudo(msg) then 
-local Groups = bot_data:scard(ban_id..'Chek:Groups')  
-local Users = bot_data:scard(ban_id..'User_Bot')  
-Text = ' ✯ الاحصائيات  \n'..' ✯ عدد الجروبات  ➠ {'..Groups..'}'..'\n ✯  عدد المشتركين  ➠ {'..Users..'}'
-send(msg.chat_id_, msg.id_,Text) 
+local Groups = bot_data:scard(bot_id..'Chek:Groups')  
+local Users = bot_data:scard(bot_id..'User_Bot')  
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '✯ عدد الجروبات  ➠ {'..Groups..'}'..'
+},
+{
+{text = '✯  عدد المشتركين  ➠ {'..Users..'}'
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-return false
-end
+
 if text == 'الجروبات' then
 if Sudo(msg) then 
 local Groups = bot_data:scard(ban_id..'Chek:Groups')  
@@ -15699,7 +15734,7 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
 .𖣂 𝙨𝙩𝙖𝙨𝙩 , #stast  🖤 ↴
 .𖣂 𝙡𝘿 , #id  🖤 ↴
-.𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
+.𖣂 𝘼𝙪𝙩?? , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
 .𖣂 ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
@@ -18076,34 +18111,6 @@ keyboard.inline_keyboard = {
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-
-if text == 'سيمو' or text == 'مرات غامبول' or text == 'بيني' then
-local Text = [[
-ᴍᴇʀᴀᴛ ɢᴀᴍʙᴏʟ  ♡
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'ᴍᴇʀᴀᴛ ɢᴀᴍʙᴏʟ',url="t.me/SEMO87811"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SEMO87811&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-
-if text == 'شهاب' or text == 'قرصان' then
-local Text = [[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ǫᴏʀsᴀɴ 
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'ǫᴏʀsᴀɴ',url="t.me/S_79_Q"}},
-{{text = 'ʙᴀʀ', callback_data="/barqors"}},{{text = 'ʙᴏᴛs', callback_data="/botqors"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/S_79_Q&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if Text == '/qors-yquio' then
