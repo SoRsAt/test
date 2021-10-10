@@ -17535,6 +17535,16 @@ keyboard.inline_keyboard = {
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
+if Text == '/units' then
+local Teext =[[
+ᴛʜɪs ɪs ᴅᴇᴠ's sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx ⇓
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'ɢᴀᴍʙᴏʟ',url="t.me/G8_M_L"},{text = 'ǫᴏʀsᴀɴ', url="t.me/S_79_Q"}},
+{{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_01&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if Text == '/theytry' then
 local Teext =[[
 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx
@@ -17547,17 +17557,6 @@ keyboard.inline_keyboard = {
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))
 end
-if Text == '/units' then
-local Teext =[[
-ᴛʜɪs ɪs ᴅᴇᴠ's sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx ⇓
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'ɢᴀᴍʙᴏʟ',url="t.me/G8_M_L"},{text = 'ǫᴏʀsᴀɴ', url="t.me/S_79_Q"}},
-{{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
-
 if Text == '/sofi' then
 local Teext =[[
  ✯ اهلا في قائمه الالعاب المتطوره سورس مـاتـريــكس ✯ 
