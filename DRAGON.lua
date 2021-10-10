@@ -3880,20 +3880,6 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/40&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'اختبار الذكاء' or text == 'نسبه الذكاء' then
-local Text = [[
-رجل اشترى جهاز كهربائي بخصم 20% من إجمالي قيمة الجهاز، وهي نسبة تساوي 150 ريال؟.ما هي قيمة الجهاز؟.
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{text = '600', callback_data="/verp"},{text = '700', callback_data="/plling"},
-},
-{
-{text = '550', callback_data="/pullin"},{text = '237', callback_data="/pulng"},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/38&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
 
 if text == 'نزلني' or text == 'نزيلني' and GetChannelMember(msg) then 
 if not bot_data:get(ban_id..'Cick:Me'..msg.chat_id_) then 
@@ -4991,7 +4977,7 @@ local vdragonv_Msg = {
 " وه ي كسمك😂♥️...!؟",
 " ي ابن المتناكه🤝🏻😂...!؟",
 " تيزك فيها كام خرمه😂...!؟",
-" كسك🤾🏻‍♂️😂...!؟",
+" كسك🤾??‍♂️😂...!؟",
 " كسمك تاني😂😂...!؟ ",
 " هنيك امك😂...!؟",
 " كسمين امك😂...!؟ ",
