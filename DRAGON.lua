@@ -16887,7 +16887,6 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/help8"},
 {text = 'اخفاء الاوامر', callback_data="/hide"},
 }
-{
 end
 if Text == '/help6' then
 if not Mod(data) then
