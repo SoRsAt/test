@@ -1871,7 +1871,7 @@ echo '•━⌯━•❴↝ᴍᴀᴛʀɪx↜❵•━⌯━•\n 🔌l •⊱ �
 end
 if text == 'تحديث السورس ' and Devban(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/IDK-Zizo/IDK/main/DRAGON.lua')
+os.execute('wget https://github.com/Gambol00/Gambol00/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ☆ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -3986,7 +3986,7 @@ keyboard.inline_keyboard = {
 {{text = '𖤍 اضافه البوت لمجموعتك 𖤍' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_01/447&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/gam_bol/14&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'شهاب' or text == 'قرصان' or text == 'قرصان' then
@@ -15203,7 +15203,7 @@ Msᴀɢ ~ #msgs
 [[
 - 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
 - 🇪🇬 𝒔𝒕𝒂𝒔𝒕 . #stast 𖣂.
-- 🇪🇬 𝐢𝐝 . #id 𖣂.
+- ???? 𝐢𝐝 . #id 𖣂.
 - 🇪🇬 𝒈𝒂??𝒆𝒔 . #game 𖣂.
 - 🇪🇬 𝐦𝐬𝐠 . #msgs 𖣂.
 - 🇪🇬 ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
@@ -15623,7 +15623,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
  △ | 𝑼𝑬𝑺 : #username ‌‌‏⚚
- ▽ | 𝑺𝑻𝑨 : #stast ☥
+ ▽ | 𝑺𝑻?? : #stast ☥
  ⊠ | 𝑰𝑫 : #id ‌‌‏♕
  ❏ | 𝑴𝑺𝑮 : #msgs 𓆊
  ❏ | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
