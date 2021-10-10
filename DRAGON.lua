@@ -17619,26 +17619,8 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⌯القائمه الرئيسيه⌯', callback_data="/change-id"},
-},
-{
 {text = 'sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx', url="t.me/G8_01"},
 },
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
-if Text == '/change-id' then
-local Teext =[[
- ✯ اوامر الاعضاء ..↑↓
-✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•✯
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'اوامر الاعضاء', callback_data="/change-names"},
-},
-{
-{text = 'sᴏᴜʀᴄᴇ ᴍᴀᴛʀɪx', url="t.me/G8_01"},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
