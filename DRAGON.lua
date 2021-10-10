@@ -16888,6 +16888,7 @@ keyboard.inline_keyboard = {
 {text = 'اخفاء الاوامر', callback_data="/hide"},
 {
 end
+
 if Text == '/help6' then
 if not Mod(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
