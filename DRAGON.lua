@@ -1697,7 +1697,8 @@ end
 end
 end
 if Chat_Type == 'UserBot' then
-if text == '/start' or text == '❴رجوع❵' then
+if text == '/start' or text == '❴رجوع❵' then 
+if not msa3d(msg) then
 if not Devban(msg) then
 local keyboard = {
 {'✯•━⌯━⌯━✯❴ᴍᴀᴛʀɪx❵✯━⌯━⌯ ━•✯'},
@@ -14928,8 +14929,8 @@ local List = {
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 : #username
-⚕𝙈𝙀𝙎𝙎𝘼𝙂𝙀𝙎 : #msgs
-⚕𝙎𝙏𝘼??𝙎 : #stast
+⚕𝙈𝙀𝙎𝙎??𝙂𝙀𝙎 : #msgs
+⚕𝙎𝙏𝘼𝙏𝙎 : #stast
 ⚕𝙄𝘿 : #id
 ⚕𝙅𝙀𝙒𝙀𝙇𝙎 : #game
 ⚕𝘿𝙀𝙑 : #ridha
@@ -15778,8 +15779,8 @@ Msᴀɢ ~ #msgs
 ► ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
 ]],
 [[
-- UsEr🇺🇸 ꙰ #username
-- StA🇺?? ꙰   #msgs
+- UsEr??🇸 ꙰ #username
+- StA🇺🇸 ꙰   #msgs
 - MsGs🇺🇸 ꙰ #stast
 - ID🇺🇸 ꙰  #id
 - ❲☆[sᴏᴜʀᴄʀ ᴍᴀᴛʀɪx](t.me/G8_01)☆❳
